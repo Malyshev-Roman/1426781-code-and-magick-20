@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Роман Малышев](https://up.htmlacademy.ru/javascript/20/user/1426781).
-* Наставник: `Неизвестно`.
+* Наставник: Алексей Беляев.
 
 ---
 
