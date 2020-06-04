@@ -52,10 +52,12 @@ var renderWizard = function (wizard) {
   return wizardElement;
 };
 
-var fragment = document.createDocumentFragment();
-for (var i = 0; i < wizards.length; i++) {
-  fragment.appendChild(renderWizard(wizards[i]));
-}
-similarListElement.appendChild(fragment);
-
+var createFragment = function (wizard) {
+  var fragment = document.createDocumentFragment();
+  for (var i = 0; i < wizard.length; i++) {
+    fragment.appendChild(renderWizard(wizard[i]));
+  }
+  similarListElement.appendChild(fragment);
+};
+createFragment(wizards);
 userDialog.querySelector('.setup-similar').classList.remove('hidden');
